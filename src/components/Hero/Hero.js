@@ -2,12 +2,13 @@ import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { AnimatedHeart, LeftSection, Heart } from './HeroStyles';
 
 const Hero = (props) => (
  <Section>
    <LeftSection>
      <SectionTitle>
+        
           Bienvenido a <br/>
           Mi Portfolio
      </SectionTitle>

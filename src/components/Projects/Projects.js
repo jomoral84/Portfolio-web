@@ -9,7 +9,7 @@ const Projects = () => (
   
 <Section nopadding id="projectos"> 
     <SectionDivider/>
-     <SectionTitle  main>Mis Projectos</SectionTitle>
+     <SectionTitle>Mis Projectos</SectionTitle>
      <GridContainer>
      
       {projects.map(({id, image, title, description, tags, source, visit}) => (

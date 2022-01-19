@@ -23,15 +23,20 @@ row-gap: 3rem;
 
 `
 export const BlogCard = styled.div `
-  background-color: #2c3e50;
+  background-color: black;
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  position: relative;
   text-align: center;
   width: 400px;
+  //  &:hover {
+  //   background-color: white;
+  //  }
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
 `;
+
+
 export const TitleContent = styled.div `
   text-align: center;
   z-index: 20;

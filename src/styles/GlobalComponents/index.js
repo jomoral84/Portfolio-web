@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { keyframes } from 'styled-components';
 
 export const Section = styled.section `
   display: ${(props) => props.grid ? "grid" : "flex" };
@@ -34,7 +35,11 @@ export const SectionTitle = styled.h2 `
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
+  
   padding: ${(props) => props.main ? '58px 0 16px' : '0'};
+  animation: moveText 2s ease-out forwards;
+
+
 
   @media ${props => props.theme.breakpoints.md}{
     font-size: ${(props) => props.main ? '56px' : '48px'};
@@ -53,6 +58,19 @@ export const SectionTitle = styled.h2 `
     max-width: 100%;
   }
 `
+
+const moveText = keyframes `
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`
+
+
 
 export const SectionText = styled.p `
   max-width: 800px;
