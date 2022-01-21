@@ -2,26 +2,25 @@ import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { AnimatedHeart, LeftSection, Heart, PulseDiv } from './HeroStyles';
+import { AnimatedHeart, LeftSection } from './HeroStyles';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 
 const Hero = (props) => (
  <Section>
    <LeftSection>
+      <FadeIn>
      <SectionTitle>
-        <PulseDiv>
-        Bienvenido a <br/>
+       Bienvenido a <br/>
           Mi Portfolio
-        </PulseDiv>
-        
-     </SectionTitle>
+       </SectionTitle>
+       </FadeIn>
+  
      <SectionText>
        Mis propositos agregar aqui
      </SectionText>
      <Button onClick={ () => window.location = 'https://google.com'}>Saber mas</Button>
    </LeftSection>
-
-
- </Section>
+</Section>
 );
 
 export default Hero;

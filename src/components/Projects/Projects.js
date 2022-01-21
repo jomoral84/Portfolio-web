@@ -8,7 +8,7 @@ import { DiBugsense } from 'react-icons/di';
 const Projects = () => (
   
 <Section nopadding id="projectos"> 
-    <SectionDivider/>
+    <SectionDivider/>  <br />
      <SectionTitle>Mis Projectos</SectionTitle>
      <GridContainer>
      

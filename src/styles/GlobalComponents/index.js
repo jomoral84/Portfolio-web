@@ -106,12 +106,12 @@ export const SectionDivider = styled.div `
     margin: ${(props) => props.divider ? "4rem 0" : "" };
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 48px;
+    width: auto;
     height: 4px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 32px;
+    width: auto;
     height: 2px;
   }
 `
