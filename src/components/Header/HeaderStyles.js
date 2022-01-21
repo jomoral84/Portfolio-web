@@ -134,7 +134,10 @@ export const SocialIcons = styled.a `
 transition: 0.3s ease;
 color: white;
 border-radius: 50px;
-  padding: 2px;
+padding: 1rem;
+margin: 10px;
+
+
 &:hover {
     background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
     transform: scale(1.2);
