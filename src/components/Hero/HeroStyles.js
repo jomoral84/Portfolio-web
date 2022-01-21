@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-export const LeftSection = styled.div`
+
+export const LeftSection = styled.div `
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;
@@ -10,6 +10,7 @@ export const LeftSection = styled.div`
 
     margin: 0 auto;
   }
+
   @media ${(props) => props.theme.breakpoints.md} {
     width: 100%;
     display: flex;
@@ -76,4 +77,35 @@ const heartBeat = keyframes `
 export const AnimatedHeart = styled(Heart)
 `
   animation: ${heartBeat} 1s infinite;
-`; 
+`;
+
+
+
+const PulseAnimation = keyframes` 
+{
+  from: {
+    transform: scale3d(1, 1, 1)
+  },
+  '50%': {
+    transform: scale3d(1.05, 1.05, 1.05)
+  },
+  to: {
+    transform: scale3d(1, 1, 1)
+  }
+}`;
+
+
+
+export const PulseDiv = styled.div`
+  animation: infinite 5s ${PulseAnimation};
+`;
+
+
+
+
+
+
+
+
+
+

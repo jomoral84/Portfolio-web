@@ -25,12 +25,17 @@ row-gap: 3rem;
 export const BlogCard = styled.div `
   background-color: black;
   border-radius: 10px;
+  box-shadow: 0px 0px 15px -8px black;
   position: relative;
   text-align: center;
   width: 400px;
-  //  &:hover {
-  //   background-color: white;
-  //  }
+  transition: all 1s ease;
+
+   &:hover {
+    transform: scale(1.1);
+    }
+
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }

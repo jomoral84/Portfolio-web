@@ -59,7 +59,7 @@ export const SectionTitle = styled.h2 `
   }
 `
 
-const moveText = keyframes `
+const moveText = keyframes`
     from {
         opacity: 0;
         transform: translateY(3rem);
@@ -69,7 +69,6 @@ const moveText = keyframes `
         transform: translateY(0);
     }
 `
-
 
 
 export const SectionText = styled.p `
