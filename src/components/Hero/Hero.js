@@ -16,7 +16,7 @@ const Hero = (props) => (
        </FadeIn>
   
      <SectionText>
-       Mis propositos agregar aqui
+       Soy Jorge Nicolas, programador Web Full Stack
      </SectionText>
      <Button onClick={ () => window.location = 'https://google.com'}>Saber mas</Button>
    </LeftSection>
