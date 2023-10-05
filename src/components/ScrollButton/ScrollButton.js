@@ -12,7 +12,7 @@ const ScrollButton = () => {
  
   // Muestra el boton cuando la pagina llega a bajar lo suficiente
   const toggleVisibility = () => {
-    if (window.pageYOffset > 700) {
+    if (window.pageYOffset > 1300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

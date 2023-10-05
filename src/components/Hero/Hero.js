@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { MainSection, Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { AnimatedHeart, LeftSection } from './HeroStyles';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 
 const Hero = (props) => (
- <Section>
+ <MainSection>
    <LeftSection>
       <FadeIn>
      <SectionTitle>
@@ -16,11 +16,11 @@ const Hero = (props) => (
        </FadeIn>
   
      <SectionText>
-       Soy Jorge Nicolas, programador Web Full Stack
+      Jorge Nicolas, programador Web Full Stack
      </SectionText>
      <Button onClick={ () => window.location = 'https://google.com'}>Saber mas</Button>
    </LeftSection>
-</Section>
+</MainSection>
 );
 
 export default Hero;
