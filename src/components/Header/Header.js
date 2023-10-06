@@ -22,21 +22,8 @@ import {
 const Header = () => (
   <Container>
     <Div1>
-      <Link href="/">
-        <a
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
-            marginBottom: "20px",
-          }}
-        >
-          {" "}
-         
-          <img src="../images/Logo2.jpg"/>
-          <Span>Portfolio</Span>{" "}
-        </a>
-      </Link>
+      <img src="../../images/Logo3.png" alt="logo" width="100px" height="30px" margin="5px 5px 5px 5px"/>
+ 
     </Div1>
 
     <Div2>
@@ -66,7 +53,6 @@ const Header = () => (
       <SocialIcons href="https://linkedin.com">
         <AiFillLinkedin Size="4rem" />
       </SocialIcons>{" "}
-      
     </Div3>
   </Container>
 );

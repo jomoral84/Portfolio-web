@@ -47,6 +47,15 @@ export const BlogCard = styled.div`
   }
 `;
 
+export const ProjectCard = styled.div`
+  height: 52rem;
+  width: 35rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
@@ -122,3 +131,6 @@ export const Tag = styled.li`
   color: #d8bfbf;
   font-size: 1.5rem;
 `;
+
+
+

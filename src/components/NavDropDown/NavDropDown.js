@@ -76,4 +76,3 @@ export const DropDownItemDesc = styled.p`
   line-height: 22px;
   text-align: start;
 `
-`
