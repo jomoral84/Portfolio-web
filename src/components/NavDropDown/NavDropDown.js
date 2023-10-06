@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import styled from 'styled-components'
 
 export const DropDownContainer = styled.div`
@@ -73,4 +75,5 @@ export const DropDownItemDesc = styled.p`
   font-size: 14px;
   line-height: 22px;
   text-align: start;
+`
 `

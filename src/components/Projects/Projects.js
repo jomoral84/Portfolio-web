@@ -12,7 +12,7 @@ import {
   TitleContent,
   UtilityList,
   Img,
-  ImgContainer
+  ImgContainer,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -23,7 +23,7 @@ import { projects } from "../../constants/constants";
 import { DiBugsense } from "react-icons/di";
 
 const Projects = () => (
-  <Section nopadding id="projectos">
+  <Section id="projectos">
     <SectionDivider /> <br />
     <SectionTitle>Mis Projectos</SectionTitle>
     <GridContainer>

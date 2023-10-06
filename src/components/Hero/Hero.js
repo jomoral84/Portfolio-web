@@ -4,9 +4,11 @@ import { MainSection, Section, SectionText, SectionTitle } from '../../styles/Gl
 import Button from '../../styles/GlobalComponents/Button';
 import { AnimatedHeart, LeftSection } from './HeroStyles';
 import FadeIn from 'react-fade-in/lib/FadeIn';
+import Header from '../Header/Header';
 
 const Hero = (props) => (
  <MainSection>
+  <Header/>
    <LeftSection>
       <FadeIn>
      <SectionTitle>
@@ -16,9 +18,9 @@ const Hero = (props) => (
        </FadeIn>
   
      <SectionText>
-      Jorge Nicolas, programador Web Full Stack
+      Jorge Morales, programador Web Full Stack
      </SectionText>
-     <Button onClick={ () => window.location = 'https://google.com'}>Saber mas</Button>
+     <Button onClick={ () => window.location = 'https://google.com'}>Descargar CV</Button>
    </LeftSection>
 </MainSection>
 );

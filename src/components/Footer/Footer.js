@@ -9,12 +9,12 @@ const Footer = () => {
  <FooterWrapper>
    <LinkList>
     <LinkColumn>
-    <LinkTitle><AiOutlinePhone></AiOutlinePhone>  Telefono</LinkTitle>
-    <LinkItem>11-4432-4334</LinkItem>
+    <LinkTitle><AiOutlinePhone></AiOutlinePhone>Telefono</LinkTitle>
+    <LinkItem>11-3047-6814</LinkItem>
     </LinkColumn>
 
     <LinkColumn>
-    <LinkTitle><AiOutlineMail></AiOutlineMail>  Email</LinkTitle>
+    <LinkTitle><AiOutlineMail></AiOutlineMail>Email</LinkTitle>
     <LinkItem>jor22_84@hotmail.com</LinkItem>
     </LinkColumn>
     
@@ -28,14 +28,12 @@ const Footer = () => {
         <Slogan>Aplicando conocimientos</Slogan>
       </CompanyContainer>
       <SocialIcons href='https://github.com'>
-        <AiFillGithub Size="3rem"/>    
+        <AiFillGithub size="3rem"/>    
       </SocialIcons>
      <SocialIcons href='https://linkedin.com'>
-       <AiFillLinkedin Size="3rem"/>    
+       <AiFillLinkedin size="3rem"/>    
      </SocialIcons> 
-     <SocialIcons href='https://facebook.com'>
-       <AiFillFacebook Size="3rem"/>    
-     </SocialIcons>
+    
 
   </SocialIconsContainer>
 

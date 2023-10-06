@@ -1,10 +1,7 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
-
-export const LeftSection = styled.div `
+export const LeftSection = styled.div`
   width: 100%;
-  
-
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;
@@ -23,7 +20,6 @@ export const LeftSection = styled.div `
   }
 `;
 
-
 const Heart = styled.div`
   position: relative;
   width: 100px;
@@ -31,7 +27,7 @@ const Heart = styled.div`
   &:before,
   &:after {
     position: absolute;
-    content: '';
+    content: "";
     left: 50px;
     top: 0;
     width: 50px;
@@ -48,8 +44,7 @@ const Heart = styled.div`
   }
 `;
 
-
-const heartBeat = keyframes `
+const heartBeat = keyframes`
   0%
   {
     transform: scale( .75 );
@@ -76,22 +71,6 @@ const heartBeat = keyframes `
   }
 `;
 
-
-export const AnimatedHeart = styled(Heart)
-`
+export const AnimatedHeart = styled(Heart)`
   animation: ${heartBeat} 1s infinite;
 `;
-
-
-
-
-
-
-
-
-
-
-
-
-
-

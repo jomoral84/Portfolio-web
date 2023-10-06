@@ -2,19 +2,22 @@ import styled from "styled-components";
 import { keyframes } from "styled-components";
 
 export const MainSection = styled.section`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/section_image3.jpg);
+  background-image: url(images/section_image4.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
   margin: 0 auto;
   max-width: auto;
+  height: 600px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
   grid-template-columns: 1fr 1fr;
   object-fit: cover;
-  
 
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 24px 48px 0;
@@ -124,7 +127,7 @@ export const SectionText = styled.p`
 `;
 
 export const SectionDivider = styled.div`
-  width: 150px;
+  width: 200px;
   height: 6px;
   border-radius: 10px;
   background-color: #fff;

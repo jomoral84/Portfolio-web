@@ -1,7 +1,7 @@
-import { IoIosArrowDropdown } from 'react-icons/io';
-import styled from 'styled-components';
+import { IoIosArrowDropdown } from "react-icons/io";
+import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
@@ -17,7 +17,7 @@ export const Container = styled.div `
     grid-row-gap: 0.5rem;
   }
 `;
-export const Div1 = styled.div `
+export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
@@ -26,16 +26,15 @@ export const Div1 = styled.div `
     grid-area: 1 / 1 / 2 / 3;
   }
 `;
-export const Div2 = styled.div `
-  grid-area: 1 / 2 / 2 / 4;
+export const Div2 = styled.div`
+  grid-area: 1 / 2 / 2 / 5;
   display: flex;
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
-    
     grid-area: 2 / 2 / 3 / 5;
   }
 `;
-export const Div3 = styled.div `
+export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
   justify-content: space-around;
@@ -46,21 +45,17 @@ export const Div3 = styled.div `
   }
 `;
 
-export const Span = styled.span `
+export const Span = styled.span`
   font-size: 2rem;
-
 `;
 
-
-
 // Navigation Links
-export const NavLink = styled.a `
+export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
   &:hover {
-
     color: #fff;
     opacity: 1;
     cursor: pointer;
@@ -69,19 +64,16 @@ export const NavLink = styled.a `
     padding: 0.5rem;
     font-size: 1.5rem;
     display: inline;
-    
   }
 
   /* @media ${(props) => props.theme.breakpoints.md} {
     padding: 1rem;
     font-size: 2rem;
   } */
-
-
 `;
 
 /// DropDown Contact
-export const ContactDropDown = styled.button `
+export const ContactDropDown = styled.button`
   border: none;
   display: flex;
   position: relative;
@@ -108,14 +100,13 @@ export const ContactDropDown = styled.button `
   }
 `;
 
-export const NavProductsIcon = styled(IoIosArrowDropdown)
-`
+export const NavProductsIcon = styled(IoIosArrowDropdown)`
   margin-left: 8px;
   display: flex;
   align-self: center;
   transition: 0.3s ease;
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
-  transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
+  opacity: ${({ isOpen }) => (isOpen ? "1" : ".75")};
+  transform: ${({ isOpen }) => (isOpen ? "scaleY(-1)" : "scaleY(1)")};
 
   &:hover {
     opacity: 1;
@@ -127,21 +118,18 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)
   }
 `;
 
+// Social Icons
 
-// Social Icons 
-
-export const SocialIcons = styled.a `
+export const SocialIcons = styled.a`
+font-size: 3rem;
 transition: 0.3s ease;
 color: white;
 border-radius: 50px;
-padding: 1rem;
-margin: 10px;
-
-
+  padding: 8px;
 &:hover {
-    background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
+    background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
-    
+  
   }
-`
+`;
