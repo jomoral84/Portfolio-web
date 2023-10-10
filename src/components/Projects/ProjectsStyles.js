@@ -11,8 +11,8 @@ export const ImgContainer = styled.div`
   display: flex;
   align-items: "center";
   justify-content: "center";
-  height: 100%;
-  width: 90%;
+  height: auto;
+  width: auto;
 `;
 
 export const GridContainer = styled.section`
@@ -20,8 +20,8 @@ export const GridContainer = styled.section`
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   padding: 3rem;
   place-items: center;
-  column-gap: 2rem;
-  row-gap: 3rem;
+  column-gap: 6rem;
+  row-gap: 6rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     flex-direction: column;
@@ -29,14 +29,17 @@ export const GridContainer = styled.section`
     padding-bottom: 0;
   }
 `;
+
+
 export const BlogCard = styled.div`
-  background-color: #2f3542;
+  background: linear-gradient(#536976,#292E49);
   border-radius: 10px;
   box-shadow: 0px 0px 15px -8px black;
   position: relative;
   text-align: center;
-  width: 400px;
-  transition: all 1s ease;
+  width: 450px;
+  height: 600px;
+  transition: all 0.5s ease;
 
   &:hover {
     transform: scale(1.1);
@@ -57,6 +60,7 @@ export const ProjectCard = styled.div`
 `;
 
 export const TitleContent = styled.div`
+  padding: 5px 5px 5px 5px;
   text-align: center;
   z-index: 20;
   width: 100%;
@@ -64,9 +68,10 @@ export const TitleContent = styled.div`
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
+  width: 100%;
   letter-spacing: 2px;
   color: #9cc9e3;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
 `;
 
@@ -94,11 +99,12 @@ export const CardInfo = styled.p`
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
-  // text-align: justify;
+  text-align: justify;
   word-spacing: 0.5px;
+  overflow: hidden;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.3rem;
+    padding: 2rem;
   }
 `;
 

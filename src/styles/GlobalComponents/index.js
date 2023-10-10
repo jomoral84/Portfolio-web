@@ -59,7 +59,7 @@ export const Section = styled.section`
 export const SectionTitle = styled.h2`
   font-weight: 700;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
-  line-height: ${(props) => (props.main ? "72px" : "56px")};
+  line-height: ${(props) => (props.main ? "72px" : "70px")};
   width: max-content;
   max-width: 100%;
   background: linear-gradient(
@@ -69,7 +69,8 @@ export const SectionTitle = styled.h2`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  padding: 5px, 5px, 5px, 5px;
 
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
   animation: moveText 2s ease-out forwards;

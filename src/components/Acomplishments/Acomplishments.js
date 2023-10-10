@@ -18,7 +18,7 @@ const data = [
 const Acomplishments = () => (
   <Section id="logros">
     <SectionTitle>Logros Personales</SectionTitle>
-    <Fade left >
+    <Fade left>
       <Boxes>
         {data.map((card, index) => (
           <Box key={index}>
