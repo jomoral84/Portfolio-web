@@ -11,6 +11,7 @@ import Button from "../../styles/GlobalComponents/Button";
 import { AnimatedHeart, LeftSection } from "./HeroStyles";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import Header from "../Header/Header";
+import DownloadCv from "./DownloadCv";
 
 const Hero = (props) => (
   <MainSection>
@@ -24,9 +25,10 @@ const Hero = (props) => (
       </Zoom>
 
       <SectionText>Jorge Morales, programador Web Full Stack</SectionText>
-      <Button onClick={() => (window.location = "https://google.com")}>
+      {/* <Button onClick={() => (window.location = "https://google.com")}>
         Descargar CV
-      </Button>
+      </Button> */}
+      <DownloadCv/>
     </LeftSection>
   </MainSection>
 );
