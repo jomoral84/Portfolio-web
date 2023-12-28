@@ -25,10 +25,8 @@ const Hero = (props) => (
       </Zoom>
 
       <SectionText>Jorge Morales, programador Web Full Stack</SectionText>
-      {/* <Button onClick={() => (window.location = "https://google.com")}>
-        Descargar CV
-      </Button> */}
-      <DownloadCv/>
+
+      <DownloadCv />
     </LeftSection>
   </MainSection>
 );
